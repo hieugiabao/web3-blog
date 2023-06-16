@@ -12,7 +12,7 @@ async function main() {
   /* this code writes the contract addresses to a local */
   /* file named config.js that we can use in the app */
   fs.writeFileSync(
-    "./config.js",
+    "./config.ts",
     `
   export const contractAddress = "${blog.address}"
   export const ownerAddress = "${await blog.signer.getAddress()}"
